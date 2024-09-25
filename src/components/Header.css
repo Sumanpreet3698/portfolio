@@ -1,0 +1,123 @@
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevents horizontal overflow in case of larger elements */
+}
+
+/* Header Styling */
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: 250px;
+  background-image: linear-gradient(to right, #ffafbd, #ffc3a0); 
+  /* background: url('/src/assets/flat-lay-cupboard-ornament-table\ \(3\).jpg') no-repeat center center; */
+  background-size: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  position: relative;
+  margin-bottom: 0; /* Ensure no extra margin below the header */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for readability */
+  z-index: -1;
+}
+
+.header-content {
+  text-align: center;
+  color: white;
+  z-index: 1; /* Ensures text appears above the overlay */
+}
+
+.header h1 {
+  color: white;
+  font-size: 48px;
+  margin: 0;
+}
+
+.subtitle {
+  color: #ffda79;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+/* Navigation Styling */
+.nav {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 0 0; /* Reduces space above and removes space below the nav */
+  padding: 0;
+}
+
+.nav a {
+  margin: 0 25px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav a:hover {
+  color: #f3c166;
+  transform: scale(1.2);
+}
+
+/* Social Media Icons Styling */
+.social-media {
+  position: absolute;
+  top: 20px; /* Positioned at the top */
+  right: 20px; /* Aligned to the right */
+  display: flex;
+  gap: 15px; /* Adds space between icons */
+  z-index: 100;
+}
+
+.social-media a {
+  color: white;
+  font-size: 24px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-media a:hover {
+  transform: scale(1.2);
+  color: #ffda79; /* Change color on hover */
+}
+
+.social-media img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav a {
+    margin-left: 15px;
+    font-size: 18px;
+  }
+
+  .header h1 {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .social-media img {
+    width: 20px;
+    height: 20px;
+  }
+}

@@ -1,0 +1,52 @@
+#certificates {
+  padding: 20px;
+  text-align: center;
+}
+
+#certificates ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#certificates li {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  padding: 15px;
+  color: #666;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#certificates li:hover {
+  transform: translateY(-5px); /* Cool hover effect */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+#certificates li a {
+  opacity: 0.7;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url('../assets/external-link.svg'); /* Placeholder for external link logo */
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: opacity 0.3s ease;
+}
+
+#certificates li a:hover {
+  opacity: 1; /* Make the link more prominent on hover */
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 20px;
+  font-family: cursive;
+}

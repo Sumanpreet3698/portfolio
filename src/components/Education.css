@@ -1,0 +1,59 @@
+#education {
+  padding: 20px;
+  padding-top: 0px;
+  text-align: center;
+ /* Light background for the section */
+}
+
+.education-item {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ddd; /* Border for distinction */
+  border-radius: 10px; /* Rounded corners */
+  background-color: #fff; /* White background for each item */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.education-item:hover {
+  transform: translateY(-10px); /* Lift effect on hover */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15); /* More shadow on hover */
+}
+
+.education-item h3 {
+  font-size: 1.8rem; /* Increased font size */
+  margin-bottom: 10px;
+  color: #333; /* Darker color for contrast */
+  font-family: 'Montserrat', sans-serif; /* Modern font for headings */
+}
+
+.education-item p {
+  font-size: 1.2rem;
+  color: #777; /* Lighter color for descriptions */
+  line-height: 1.6; /* Better readability */
+  font-family: 'Open Sans', sans-serif; /* Clean font for paragraphs */
+}
+
+.education-item::before {
+  /* FontAwesome icon for education */
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 2rem;
+  color: #66a6ff; /* Accent color */
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+  #education {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .education-item {
+    flex: 1 1 calc(50% - 40px); /* Two columns layout for larger screens */
+    max-width: 500px;
+    margin: 20px;
+  }
+}

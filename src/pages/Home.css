@@ -1,0 +1,14 @@
+hr{
+    list-style:armenian;
+    
+    margin: 40px 20px;
+    padding: 3px;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, #278cad, #689189);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.mainDiv {
+    background-image: linear-gradient(to bottom,#c2e9fb, #a1c4fd); 
+}
+
