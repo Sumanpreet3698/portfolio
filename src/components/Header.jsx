@@ -1,29 +1,3 @@
-// import React from 'react';
-// import './Header.css';
-
-// const Header = () => {
-//   return (
-//     <header className="header">
-//       <div className="overlay"></div>
-//       <div className="header-content">
-//         <h1>Sumanpreet Kaur</h1>
-//         <p className="subtitle">Lead Developer | Web Enthusiast | Tech Innovator</p>
-//       </div>
-//       <nav className="nav">
-//         <a href="#about">About</a>
-//         <a href="#skills">Skills</a>
-//         <a href="#education">Education</a>
-//         <a href="#certificates">Certificates</a>
-//         <a href="#positions">Positions of Responsibility</a>
-//         <a href="#projects">Projects</a>
-//         <a href="#contact">Contact</a>
-//       </nav>
-//     </header>
-//   );
-// };
-
-// export default Header;
-
 import React from 'react';
 import './Header.css';
 
